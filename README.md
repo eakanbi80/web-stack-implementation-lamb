@@ -4,3 +4,5 @@ What is a Web Stack? It is is a group of software components, used to implement 
 
 
 ## LINUX
+
+### Setting up your virtual environment
