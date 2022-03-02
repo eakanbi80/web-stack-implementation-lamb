@@ -19,3 +19,6 @@ AWS offers a Free Tier for newly registered account users. This enables users to
 **Let's get started!**
 
 Begin by registering and setting up an [AWS account](https://console.aws.amazon.com/console/home?region=us-east-1) and following the directions on the screen. Once you have created your AWS account, navigate to the login page and type in your credentials.
+
+
+![](./images/Image2.png)
