@@ -1,1 +1,1 @@
-# web-stack-implementation-lamb
+# web-stack-implementation-lamp
