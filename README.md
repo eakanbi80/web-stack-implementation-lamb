@@ -41,3 +41,36 @@ Now we are going to configure our EC2 instance! Select the Ubuntu Server 20.04 L
 Then, select "t2.micro" as the instance type. Once you have made the selection, click "Review and Launch".
 
 ![](./image11.png)
+
+When you reach the "Review and Launch" page, click the "Launch" at the bottom-right of the page.
+
+![](./image12.png)
+
+Next, you should see a window appear. Create a key pair and then select "Download". Don't lose it! You will need this file in order to connect into your server from your local PC. After you downloaded the key pair, check the box for the acknowledgement, and then click on "Launch Instances".
+
+![](./image13.png)
+
+Great job! You've launched an EC2 instance! You can view your new instance by clicking the "View Instances" button at the bottom-right of your screen. Note: it may take a moment to initialize, so please be patient!
+
+![](./image14.png)
+
+## Connecting to your EC2 from your local PC
+
+**PLEASE NOTE** - Anchor tags < > will be used to indicate contents what must be replaced with your unique values. For example, if you have a file named **"keypair123.pem"** you must enter this information within the corresponding anchor tag: **< private-key-name >**
+
+Now let's connect to our instance!
+
+Begin by opening Terminal. Once you have opened Terminal, use the cd command to change into the directory that your key pair is located. This is usually the ~/Downloads directory. If you are having difficulty finding it, you can use the ls command to list the contents of your current directory.
+
+Once you have located the key pair, use the command below to activate the key file (.pem). This command will also change permissions (otherwise you may get the error “Bad Permissions”):
+
+$ sudo chmod 0400 <private-key-name>.pem
+
+When prompted, type the password for your local PC and press Enter on your keyboard.
+
+Next, go back to the AWS console for a moment, and navigate to your running EC2 instance. Copy the Public IP address, as shown in the image below:
+
+![](./image15.png)
+
+Now that you've copied the Public IP address, go back to Terminal. Connect to the EC2 instance by using the command below:
+
